@@ -37,7 +37,8 @@ class BoardTest:
             [" ", " ", " "]
         ])
         BoardTest.test_best_move(board3, (2, 2))
-        
+        # Je ne suis pas sur de comprendre les 3 premiers tests :
+        # le plateau indique que X et O ont joués 2 fois, Ca serait donc à "X" de jouer non ?
         board4 = Board(position=[
             ["O", " ", " "],
             [" ", "X", " "],

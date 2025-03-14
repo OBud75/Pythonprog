@@ -27,3 +27,12 @@ else:
     plt.xlabel("Date")
     plt.ylabel("Price")
     plt.show()
+
+# Ici les commentaires n'ajoutent rien au code et ajoutent du travail de maintenance.
+# Si vous souhaitez vraiment séparer les différentes parties, faites en des fonctions.
+def download_amazon_data():
+    return yf.download(tickers="AMZN", start="2020-06-01", end="2024-06-01")
+
+# Bonus : on voit directement comment rendre ce code générique:
+def download_stock_data(ticker, start_date, end_date):
+    return yf.download(tickers=ticker, start=start_date, end=end_date)

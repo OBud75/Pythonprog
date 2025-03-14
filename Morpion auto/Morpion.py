@@ -10,6 +10,12 @@ def verifier_victoire(jeu, joueur):
         [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Colonnes
         [0, 4, 8], [2, 4, 6]              # Diagonales
     ]
+    # Ne pas hésiter à remplacer les commentaires par des variables explicites
+    lines = [0, 1, 2], [3, 4, 5], [6, 7, 8]
+    columns = [0, 3, 6], [1, 4, 7], [2, 5, 8]
+    diagonals = [0, 4, 8], [2, 4, 6]
+    combinaisons = lines + columns + diagonals
+
     return any(all(jeu[pos] == joueur for pos in combo) for combo in combinaisons)
 
 def morpion():

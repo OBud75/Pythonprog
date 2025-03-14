@@ -1,6 +1,6 @@
 from src.board import Board
 
-
+# Evitez les noms de fichiers avec des espaces, utilisez des underscores ou des tirets
 empty = Board(position = [
             [" ", " ", " "], 
             [" ", " ", " "], 
